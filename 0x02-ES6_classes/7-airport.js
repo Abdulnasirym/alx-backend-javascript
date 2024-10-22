@@ -1,7 +1,7 @@
 export default class Airport {
   constructor(name, code) {
-    this._name = name;
-    this._code = code;
+    this.name = name;
+    this.code = code;
   }
 
   get name() {
@@ -9,7 +9,7 @@ export default class Airport {
   }
 
   set name(value) {
-    this._name = value
+    this._name = value;
   }
 
   get code() {
@@ -20,8 +20,7 @@ export default class Airport {
     this._code = value;
   }
 
-  get [symbol.toStringTag]() {
+  get [Symbol.toStringTag]() {
     return this._code;
   }
 }
-
