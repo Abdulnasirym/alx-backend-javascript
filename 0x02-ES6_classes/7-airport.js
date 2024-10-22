@@ -9,7 +9,7 @@ export default class Airport {
   }
 
   set name(value) {
-    this._value = value
+    this._name = value
   }
 
   get code() {
@@ -17,10 +17,11 @@ export default class Airport {
   }
 
   set code(value) {
-    this._value = value;
+    this._code = value;
   }
 
   get [symbol.toStringTag]() {
     return this._code;
   }
 }
+
